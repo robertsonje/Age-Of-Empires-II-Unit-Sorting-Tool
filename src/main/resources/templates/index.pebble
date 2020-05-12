@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <title>Home page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">robertsonje</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container" style="min-height: 500px">
+            <h1>Age of Empires II Unit Search Tool</h1>
+            <form class="form-horizontal" id="search-form">
+                <div class="form-group form-group-lg">
+                    <label class="col-sm-2 control-label">Unit Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" id="bth-search" class="btn btn-primary btn-lg">Search</button>
+                    </div>
+                </div>
+            </form>
+            <div id="feedback"></div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</html>
