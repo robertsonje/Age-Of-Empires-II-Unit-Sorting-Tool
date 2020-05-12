@@ -22,6 +22,6 @@ To run locally, build the program in the folder ("mvnw spring-boot:run") and con
 
 ## More Information
 
-Wikipedia article on the game itself
 [Age Of Empires II](https://en.wikipedia.org/wiki/Age_of_Empires_II) - Wikipedia article on the game itself
+
 [Age Of Empires II API](https://age-of-empires-2-api.herokuapp.com/docs/) - The API used for this app
