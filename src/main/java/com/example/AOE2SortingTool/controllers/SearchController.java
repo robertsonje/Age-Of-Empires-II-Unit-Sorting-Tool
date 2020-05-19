@@ -1,9 +1,9 @@
-package com.example.CrudRepository.controllers;
+package com.example.AOE2SortingTool.controllers;
 
-import com.example.CrudRepository.Model.AjaxResponseBody;
-import com.example.CrudRepository.Model.SearchCriteria;
-import com.example.CrudRepository.Model.Unit;
-import com.example.CrudRepository.Services.UnitService;
+import com.example.AOE2SortingTool.Model.AjaxResponseBody;
+import com.example.AOE2SortingTool.Model.SearchCriteria;
+import com.example.AOE2SortingTool.Model.Unit;
+import com.example.AOE2SortingTool.Services.UnitService;
 import java.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

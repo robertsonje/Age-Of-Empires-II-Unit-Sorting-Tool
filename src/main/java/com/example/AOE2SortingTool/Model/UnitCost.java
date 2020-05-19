@@ -1,5 +1,4 @@
-package com.example.CrudRepository.Model;
-
+package com.example.AOE2SortingTool.Model;
 import com.fasterxml.jackson.databind.JsonNode;
 
 /**

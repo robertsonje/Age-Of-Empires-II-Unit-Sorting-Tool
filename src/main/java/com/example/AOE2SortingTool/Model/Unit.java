@@ -1,5 +1,5 @@
-package com.example.CrudRepository.Model;
-
+package com.example.AOE2SortingTool.Model;
+import com.fasterxml.jackson.databind.JsonNode;
 import java.util.List;
 
 /**
@@ -71,6 +71,34 @@ public class Unit implements Comparable<Unit> {
         this.search_radius = search_radius;
         this.accuracy = accuracy;
         this.blast_radius = blast_radius;
+    }
+
+    public Unit(JsonNode unitNode) {
+                this.id = unitNode.get("id") == null ? 0 : unitNode.get("id").asInt();
+                this.name = unitNode.get("name") == null ? "" : (String)unitNode.get("name").asText();
+                this.description = unitNode.get("description") == null ? "" : unitNode.get("description").asText();
+                this.expansion = unitNode.get("expansion") == null ? "" : unitNode.get("expansion").asText();
+                this.age = unitNode.get("age") == null ? "" : unitNode.get("age").asText();
+                this.created_in = unitNode.get("created_in") == null ? "" : unitNode.get("created_in").asText();
+                this.cost = 
+                        new UnitCost(unitNode.get("cost").get("Wood"),
+                                unitNode.get("cost").get("Food"),
+                                unitNode.get("cost").get("Stone"),
+                                unitNode.get("cost").get("Gold"));
+                this.build_time = unitNode.get("build_time") == null ? 0 : unitNode.get("build_time").asInt();
+                this.reload_time = unitNode.get("reload_time") == null ? 0 : unitNode.get("reload_time").asInt();
+                this.attack_delay = unitNode.get("attack_delay") == null ? 0.0 : unitNode.get("attack_delay").asDouble();
+                this.movement_rate = unitNode.get("movement_rate") == null ? 0.0 : unitNode.get("movement_rate").asDouble();
+                this.line_of_sight = unitNode.get("line_of_sight") == null ? 0 : unitNode.get("line_of_sight").asInt();
+                this.hit_points = unitNode.get("hit_points") == null ? 0 : unitNode.get("hit_points").asInt();
+                this.range = unitNode.get("range") == null ? 0 : unitNode.get("range").asInt();
+                this.attack = unitNode.get("attack") == null ? 0 : unitNode.get("attack").asInt();
+                this.armor = unitNode.get("armor") == null ? "" : unitNode.get("armor").asText();
+                //null,
+                //null,
+                this.search_radius = unitNode.get("search_radius") == null ? 0 : unitNode.get("search_radius").asInt();
+                this.accuracy = unitNode.get("accuracy") == null ? "0%" : unitNode.get("accuracy").asText();
+                this.blast_radius = unitNode.get("blast_radius") == null ? 0 : unitNode.get("blast_radius").asInt();
     }
     
     public int getId() {

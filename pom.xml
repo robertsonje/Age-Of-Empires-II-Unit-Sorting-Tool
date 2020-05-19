@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>CrudRepository</artifactId>
+	<artifactId>AOE2SortingTool</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CrudRepository</name>
+	<name>AOE2SortingTool</name>
 	<description>CRUD Repository tutorial for Spring Boot</description>
 
 	<properties>
