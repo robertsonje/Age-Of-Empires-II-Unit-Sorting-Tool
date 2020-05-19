@@ -23,8 +23,6 @@ public class Unit implements Comparable<Unit> {
     int range;
     int attack;
     String armor;
-    List<String> attack_bonus;
-    List<String> armor_bonus;
     int search_radius;
     String accuracy;
     int blast_radius;
@@ -66,8 +64,6 @@ public class Unit implements Comparable<Unit> {
         this.range = range;
         this.attack = attack;
         this.armor = armor;
-        this.attack_bonus = attack_bonus;
-        this.armor_bonus = armor_bonus;
         this.search_radius = search_radius;
         this.accuracy = accuracy;
         this.blast_radius = blast_radius;
@@ -94,8 +90,6 @@ public class Unit implements Comparable<Unit> {
                 this.range = unitNode.get("range") == null ? 0 : unitNode.get("range").asInt();
                 this.attack = unitNode.get("attack") == null ? 0 : unitNode.get("attack").asInt();
                 this.armor = unitNode.get("armor") == null ? "" : unitNode.get("armor").asText();
-                //null,
-                //null,
                 this.search_radius = unitNode.get("search_radius") == null ? 0 : unitNode.get("search_radius").asInt();
                 this.accuracy = unitNode.get("accuracy") == null ? "0%" : unitNode.get("accuracy").asText();
                 this.blast_radius = unitNode.get("blast_radius") == null ? 0 : unitNode.get("blast_radius").asInt();
